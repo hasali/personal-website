@@ -9,4 +9,8 @@ body {
   background: teal;
   height: 100vh;
 }
+
+.navbar ul {
+  margin: 0;
+}
 /*# sourceMappingURL=main.css.map */

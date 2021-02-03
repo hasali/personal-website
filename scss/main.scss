@@ -1,3 +1,5 @@
+@import './variables';
+
 body{
    height: 100%; 
    background: url("../img/18410.jpg");
@@ -9,4 +11,11 @@ body{
    background: teal;
   
    height: 100vh;
+}
+
+.navbar{
+   ul{
+      margin:0;
+   }
+   
 }
