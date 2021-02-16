@@ -1,23 +1,3 @@
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-.recent-projects {
-  height: 100vh;
-  width: 500px;
-}
-
-.project-card {
-  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-  width: 40%;
-}
-
 .menu-btn {
   position: absolute;
   z-index: 1;
@@ -26,19 +6,16 @@
   height: 20px;
   width: 28px;
   cursor: pointer;
-  -webkit-transform: translate(5px);
-          transform: translate(5px);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .menu-btn .burger {
   position: absolute;
-  right: 50px;
+  right: 0;
   top: 0.5rem;
-  width: 18px;
+  width: 28px;
   height: 3px;
-  background-color: white;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -49,7 +26,6 @@
   top: -8px;
   width: 28px;
   height: 3px;
-  background-color: #0496bb;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -60,17 +36,14 @@
   top: 8px;
   width: 28px;
   height: 3px;
-  background-color: #0496bb;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .menu-btn .burger.open {
-  -webkit-transform: translateX(5px);
-          transform: translateX(5px);
+  -webkit-transform: rotate(720deg);
+          transform: rotate(720deg);
   background: transparent;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .menu-btn .burger.open::before {
@@ -126,51 +99,4 @@
   -webkit-transform: translateY(0);
           transform: translateY(0);
 }
-
-body {
-  background: url("../img/gplaypattern_@2X.png");
-  font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-.title {
-  padding-top: 40vh;
-}
-
-.landing-page {
-  background: #272727;
-  line-height: 1;
-  color: white;
-  height: 100vh;
-  overflow: hidden;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-.landing-page .name {
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  margin-top: 1rem;
-  border-bottom: 2px solid #fff;
-  color: #0496bb;
-}
-
-.landing-page .name .last {
-  font-weight: 700;
-}
-
-.nav-bar {
-  list-style-type: none;
-  margin: 0;
-}
-
-h1, h2, h3 {
-  font-weight: 400;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-/*# sourceMappingURL=main.css.map */
+/*# sourceMappingURL=menu.css.map */

@@ -1,23 +1,41 @@
-@import './variables';
+@import 'variables';
+@import 'projects';
+@import 'menu';
+@import 'helpers';
 
 body{
    //height: 100%; 
-   background: url("../img/18410.jpg");
-   background-size: cover;
+   background: url("../img/gplaypattern_@2X.png");
+   //background-size: cover;
+   //resize:both;
    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-   line-height: 1;
+   //line-height: 1;
+
 }
+
 .title{
    padding-top: 40vh;
 }
 .landing-page{
+   //position: fixed;
    background: $primary-color;
-   
-   
+   line-height: 1;
+   color: $secondary-color;
    height: 100vh;
    overflow: hidden;
    align-items: center;
    text-align: center;
+   .name{
+      font-size: 5rem;
+      padding-bottom: 1rem;
+      margin-top: 1rem;
+      border-bottom: 2px solid #fff;
+      color: $landing-text;
+      .last{
+         
+         font-weight: 700;
+      }
+   }
    
 }
 
@@ -37,25 +55,8 @@ a{
 }
 header{
    
-   position: fixed;
-   z-index: 2;
-   width: 100%;
-   padding: 1rem;
-}
-.main{
-   height: 100%;
-   width: 100%;
-
-   .social-icons{
-      position: fixed;
-      bottom: 1rem;
-      left: 1rem;
-
-      a{
-         padding: 0.4rem;
-         &:hover{
-            color: $landing-text;
-         }
-      }
-   }
+   // position: fixed;
+   // z-index: 2;
+   // width: 100%;
+   // padding: 1rem;
 }
