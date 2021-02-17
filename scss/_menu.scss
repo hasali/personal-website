@@ -4,17 +4,17 @@
 .menu-btn{
     position: absolute;
     z-index: 1;
-    right: 1rem;
+    right: 2rem;
     top: 1rem;
     height: 20px;
     width: 28px;
     cursor: pointer;
-    transform: translate(5px);
+    //transform: translate(5px);
     @include transition-ease;
 
-    .burger{
-        position:absolute;
-        right: 50px;
+    & .burger{
+        position: absolute;
+        left: 0px;
         top: 0.5rem;
         width: 18px;
         height: 3px;
@@ -25,6 +25,7 @@
             content:'';
             position: absolute;
             top: -8px;
+            left: 0px;
             width: 28px;
             height: 3px;
             background-color: $landing-text;
@@ -36,23 +37,24 @@
             top: 8px;
             width: 28px;
             height: 3px;
-
+            left: 0px;
             background-color: $landing-text;
             @include transition-ease
         }
 
         &.open{
-            transform: translateX(5px);
+            
             background: transparent;
             @include transition-ease;
-            &::before{
-                transform: rotate(45deg) translate(5px,8px);
+            
+        }
+        &.open::before{
+            transform: rotate(45deg) translate(5px,8px);
 
-            }
-            &::after{
-                width: 28px;
-                transform: rotate(-45deg) translate(3px, -7px);
-            }
+        }
+        &.open::after{
+            //width: 28px;
+            transform: rotate(-45deg) translate(3px, -7px);
         }
     }
 }
@@ -60,7 +62,7 @@
 .nav{
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     width: 20vw;
     opacity: 0.98;
     visibility: hidden;
@@ -68,21 +70,22 @@
     &.open{
         visibility: visible;
     }
-    .menu-nav{
+    .nav-bar{
         display: flex;
+        right:3rem;
         flex-flow: column wrap;
         align-items:center;
         justify-content: center;
         height: 20vh;
         overflow: hidden;
-        background: white;
+        //background: white;
         list-style-type: none;
         padding-right: 1rem;
-        transform: translateY(-100%);
+        transform: translateX(100%);
         @include transition-ease;
 
         &.open{
-            transform: translateY(0);
+            transform: translateX(0);
         }
     }
 }

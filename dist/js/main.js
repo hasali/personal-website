@@ -3,12 +3,9 @@ const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 const menuNav =document.querySelector('.nav-bar');
-console.log(menuBtn);
-console.log(hamburger);
-console.log(nav);
-console.log(menuNav);
 
-let showMenu = false;
+
+let showMenu = true;
 
 
     
