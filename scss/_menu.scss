@@ -12,7 +12,7 @@
     //transform: translate(5px);
     @include transition-ease;
 
-    & .burger{
+    .burger{
         position: absolute;
         left: 0px;
         top: 0.5rem;
@@ -46,7 +46,6 @@
             
             background: transparent;
             @include transition-ease;
-            
         }
         &.open::before{
             transform: rotate(45deg) translate(5px,8px);
