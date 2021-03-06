@@ -9,36 +9,60 @@
     h1{
         padding: 2rem;
     }
-    .project-grid{
-        display: grid;
-        grid-template-columns: repeat(3, 33.33%);
-        //column-gap: 0.5rem;
-        //left: 15vh;
-        //right: 15vh;
-        width: 80vw;
-        margin: 0 auto 0 auto;
-        padding: 2rem 0 2rem 0;
-         //align-items: center;
-        //text-align: center;
+    
+}
+.project-grid{
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    position: relative;
+    //column-gap: 0.5rem;
+    //left: 15vh;
+    //right: 15vh;
+    width: 80vw;
+    margin: 0 auto 0 auto;
+    padding: 2rem 0 2rem 0;
+     //align-items: center;
+    //text-align: center;
+}
+.project-card{
+    position: relative;
+    justify-self: center;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    border-radius: 10px;
+    height: 240px;
+    width: 360px;
+    
+    &:hover{
+        box-shadow: 0 5px 9px 0 rgba(0,0,0,0.3);
+        @include transition-ease;
+        #proj1-container{
+            opacity:0;
+            
+        }
+       
     }
-    .project-card{
-        justify-self: center;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
+    #proj1-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 2;
+        position: absolute;
         border-radius: 10px;
-        height: 240px;
-        width: 360px;
-        background-color: rgb(59, 124, 221);
-        &:hover{
-            box-shadow: 0 5px 9px 0 rgba(0,0,0,0.3);
-            @include transition-ease;
+        background-color: rgb(74, 135, 228);
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+        @include transition-ease;
+        img{ 
+            z-index: 3;
+            height: 40%;
+            width: 70%;
+             
         }
-        #proj1{
-            z-index: 2;
-            background: url("../img/AniCal_logo.png") no-repeat;
-            background-size: 40% 30%;
-            background-position: center;
-            height: 100%;
-            width: 100%;
-        }
+        
+    }
+    figcaption{
+        position: absolute;
+        text-align: center;
     }
 }

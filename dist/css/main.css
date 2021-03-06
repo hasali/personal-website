@@ -18,17 +18,19 @@
   padding: 2rem;
 }
 
-.recent-projects .project-grid {
+.project-grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (33.33%)[3];
       grid-template-columns: repeat(3, 33.33%);
+  position: relative;
   width: 80vw;
   margin: 0 auto 0 auto;
   padding: 2rem 0 2rem 0;
 }
 
-.recent-projects .project-card {
+.project-card {
+  position: relative;
   -ms-grid-column-align: center;
       justify-self: center;
   -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
@@ -36,23 +38,49 @@
   border-radius: 10px;
   height: 240px;
   width: 360px;
-  background-color: #3b7cdd;
 }
 
-.recent-projects .project-card:hover {
+.project-card:hover {
   -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.recent-projects .project-card #proj1 {
+.project-card:hover #proj1-container {
+  opacity: 0;
+}
+
+.project-card #proj1-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 2;
-  background: url("../img/AniCal_logo.png") no-repeat;
-  background-size: 40% 30%;
-  background-position: center;
+  position: absolute;
+  border-radius: 10px;
+  background-color: #4a87e4;
   height: 100%;
   width: 100%;
+  overflow: hidden;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-card #proj1-container img {
+  z-index: 3;
+  height: 40%;
+  width: 70%;
+}
+
+.project-card figcaption {
+  position: absolute;
+  text-align: center;
 }
 
 .menu-btn {
