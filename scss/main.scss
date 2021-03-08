@@ -20,7 +20,7 @@ body{
    //position: fixed;
    background: $primary-color;
    line-height: 1;
-   color: $secondary-color;
+   color: $secondary-textcolor;
    height: 100vh;
    overflow: hidden;
    align-items: center;
@@ -50,7 +50,7 @@ h1, h2, h3{
    font-weight: 400;
 }
 a{
-   color: $secondary-color;
+   color: $secondary-textcolor;
    text-decoration: none;
 }
 header{

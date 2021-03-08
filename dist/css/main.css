@@ -38,16 +38,32 @@
   border-radius: 10px;
   height: 240px;
   width: 360px;
+  background: #060422;
+}
+
+.project-card .img-background {
+  background: url("../img/AniCal-Backdrop.jpg") no-repeat;
+  background-position: center;
+  background-size: auto;
+  position: absolute;
+  border-radius: 10px;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-card:hover {
   -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
           box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
 }
 
 .project-card:hover #proj1-container {
+  opacity: 0;
+}
+
+.project-card:hover .img-background {
   opacity: 0;
 }
 
@@ -64,7 +80,6 @@
   z-index: 2;
   position: absolute;
   border-radius: 10px;
-  background-color: #4a87e4;
   height: 100%;
   width: 100%;
   overflow: hidden;
@@ -73,12 +88,12 @@
 }
 
 .project-card #proj1-container img {
-  z-index: 3;
   height: 40%;
   width: 70%;
 }
 
 .project-card figcaption {
+  color: white;
   position: absolute;
   text-align: center;
 }
