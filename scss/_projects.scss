@@ -21,49 +21,53 @@
  
 }
 .project-card{
+    display: flex;
     position: relative;
-    justify-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
-    border-radius: 10px;
+    border-radius: 15px;
     height: 240px;
     width: 360px;
     background:rgb(6, 4, 34);
+    //@include transition-ease;
     .img-background{
         background:url("../img/AniCal-Backdrop.jpg") no-repeat;
         background-position: center;
         background-size: auto;
         position: absolute;
-        border-radius: 10px;
-        z-index:1;
+        border-radius: 13px;
+        z-index: 2;
         height: 100%;
         width: 100%;
         @include transition-ease;
     }
     &:hover{
         box-shadow: 0 5px 9px 0 rgba(0,0,0,0.3);
-       // @include transition-ease;
-        #proj1-container{
+        #logo-container{
             opacity:0;
-            
+            //display: none;
+           z-index: -1;
         }
         .img-background{
             opacity: 0;
+            z-index:-1;
+        }
+        figcaption{
+            
+            //@include transition-ease;
+            opacity: 1;
         }
     }
-    #proj1-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 2;
+    #logo-container{
         position: absolute;
-        border-radius: 10px;
-        //background-color: rgba(74, 136, 228, 0.938);
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
+        //top:50%;
+        //align-items: center;
+        z-index:3;
         @include transition-ease;
         img{ 
-            //z-index: 3;
+           // z-index: 2;
             height: 40%;
             width: 70%;
              
@@ -71,8 +75,28 @@
         
     }
     figcaption{
+        @include transition-ease;
         color: $secondary-textcolor;
-        position: absolute;
-        text-align: center;
+        margin: 5px;
+        //position: absolute;
+        //margin: auto;
+        //visibility: hidden;
+        opacity:0;
+        z-index:1;
+        //text-align: center;
+        p{
+            margin-bottom: 1rem;
+        }
+        a:link, a:visited{
+            border: 2px solid $landing-textcolor;
+            padding: 10px 20px;
+            text-align: center;
+            text-decoration: none;
+            @include transition-ease;
+            &:hover{
+                background-color: $landing-textcolor;
+            }
+        }
     }
+    
 }
