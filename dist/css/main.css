@@ -52,8 +52,15 @@
   background: #060422;
 }
 
-.project-card .img-background {
+.project-card #anical-bgimg {
   background: url("../img/AniCal-Backdrop.jpg") no-repeat;
+}
+
+.project-card #casa-bgimg {
+  background: url("../img/casanova-Backdrop.jpg") no-repeat;
+}
+
+.project-card .img-background {
   background-position: center;
   background-size: auto;
   position: absolute;
@@ -70,7 +77,7 @@
           box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
 }
 
-.project-card:hover #logo-container {
+.project-card:hover .logo-container {
   opacity: 0;
   z-index: -1;
 }
@@ -84,14 +91,14 @@
   opacity: 1;
 }
 
-.project-card #logo-container {
+.project-card .logo-container {
   position: absolute;
   z-index: 3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.project-card #logo-container img {
+.project-card .logo-container img {
   height: 40%;
   width: 70%;
 }
@@ -106,7 +113,7 @@
 }
 
 .project-card figcaption p {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .project-card figcaption a:link, .project-card figcaption a:visited {

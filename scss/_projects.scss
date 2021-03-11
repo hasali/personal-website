@@ -32,8 +32,13 @@
     width: 360px;
     background:rgb(6, 4, 34);
     //@include transition-ease;
-    .img-background{
+    #anical-bgimg{
         background:url("../img/AniCal-Backdrop.jpg") no-repeat;
+    }
+    #casa-bgimg{
+        background:url("../img/casanova-Backdrop.jpg") no-repeat;
+    }
+    .img-background{
         background-position: center;
         background-size: auto;
         position: absolute;
@@ -45,7 +50,7 @@
     }
     &:hover{
         box-shadow: 0 5px 9px 0 rgba(0,0,0,0.3);
-        #logo-container{
+        .logo-container{
             opacity:0;
             //display: none;
            z-index: -1;
@@ -60,7 +65,7 @@
             opacity: 1;
         }
     }
-    #logo-container{
+    .logo-container{
         position: absolute;
         //top:50%;
         //align-items: center;
@@ -85,7 +90,7 @@
         z-index:1;
         //text-align: center;
         p{
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
         }
         a:link, a:visited{
             border: 2px solid $landing-textcolor;
