@@ -60,6 +60,10 @@
   background: url("../img/casanova-Backdrop.jpg") no-repeat;
 }
 
+.project-card #pwu-bgimg {
+  background-color: #0f0f0f;
+}
+
 .project-card .img-background {
   background-position: center;
   background-size: auto;
