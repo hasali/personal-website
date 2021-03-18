@@ -1,5 +1,6 @@
 @import 'variables';
 @import 'projects';
+@import 'about';
 @import 'menu';
 @import 'helpers';
 
@@ -59,4 +60,7 @@ header{
    // z-index: 2;
    // width: 100%;
    // padding: 1rem;
+}
+main{
+   padding: 1.2rem 7rem;
 }

@@ -14,17 +14,18 @@
 .project-grid{
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
+    justify-items: center;
     position: relative;
-    width: 80vw;
+    width: 81vw;
     margin: 0 auto 0 auto;
-    padding: 2rem 0 2rem 0;
+    //padding: 2rem 0 2rem 0;
  
 }
 .project-card{
     display: flex;
     position: relative;
     justify-content: center;
-    align-items: center;
+    //align-items: center;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     border-radius: 15px;
