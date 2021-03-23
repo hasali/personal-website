@@ -2,8 +2,11 @@ $primary-color:#272727;
 $header-textcolor: rgb(6, 4, 34);
 $secondary-textcolor:white;
 $landing-textcolor:rgb(4, 150, 187);
-$main-text: black;
-
+$about-textcolor: rgb(136, 136, 136);
+@font-face{
+    font-family: QuickSand;
+    src:url('Quicksand-VariableFont_wght.ttf');
+}
 *{
     box-sizing: border-box;
     margin: 0;
