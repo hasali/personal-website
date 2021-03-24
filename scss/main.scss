@@ -4,9 +4,17 @@
 @import 'menu';
 @import 'helpers';
 
-
+::-webkit-scrollbar{
+   width: 9px;
+}
+::-webkit-scrollbar-track{
+   background: $primary-color;
+}
+::-webkit-scrollbar-thumb{
+   background: $landing-textcolor;
+}
 body{
-  
+  position: relative;
    background: url("../img/gplaypattern_@2X.png");
    //background-size: cover;
    //resize:both;
@@ -18,35 +26,44 @@ body{
 .title{
    padding-top: 40vh;
 }
-.landing-page{
-
-   padding-left: 10%;
-   background: $primary-color;
-   line-height: 1;
-   color: $secondary-textcolor;
+.landing-page-wrapper{
    height: 100vh;
-   overflow: hidden;
-   align-items: left;
-   text-align: left;
-   .name{
-      font-size: 6rem;
-      padding-bottom: 1rem;
-      margin-bottom: 1rem;
-      border-bottom: 2px solid #fff;
-      color: $landing-textcolor;
-      .last{
-         
-         font-weight: 700;
+   width: 100vw;
+   max-width: 100%;
+   position: relative;
+   .landing-page{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      z-index: 2;
+      padding-left: 10%;
+      line-height: 1;
+      overflow: hidden;
+      //align-items: left;
+      text-align: left;
+      background: $primary-color;
+      color: $secondary-textcolor;
+      .name{
+         //z-index: 1;
+         font-size: 6rem;
+         padding-bottom: 1rem;
+         margin-bottom: 1rem;
+         border-bottom: 2px solid #fff;
+         color: $landing-textcolor;
+         .last{
+            
+            font-weight: 700;
+         }
       }
+      
    }
-   
 }
-
+   
 .nav-bar{
-
+      z-index:0;
       list-style-type: none;
       margin:0;
-   
+      //position: absolute;
    
 }
 h1, h2, h3{
@@ -76,10 +93,12 @@ footer{
       color: $secondary-textcolor;
       padding-top:6%;
       
-      
+      font-size: 0.9rem;
          i + i{
             margin-left: 50px;
          }
-      
+      .disclaimer{
+         padding-top: 1rem;
+      }
    }
 }

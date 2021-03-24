@@ -2,7 +2,7 @@
 @import 'helpers';
 
 .menu-btn{
-    position: absolute;
+    position: fixed;
     z-index: 1;
     right: 2rem;
     top: 1rem;
@@ -60,6 +60,7 @@
 
 .nav{
     position: fixed;
+    z-index: 1;
     top: 0;
     right: 0;
     width: 20vw;
@@ -70,6 +71,7 @@
         visibility: visible;
     }
     .nav-bar{
+        z-index: 1;
         display: flex;
         right:3rem;
         flex-flow: column wrap;
