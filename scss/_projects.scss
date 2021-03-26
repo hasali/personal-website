@@ -9,14 +9,18 @@
     //width:500px;
     h1{
         
-            color:$landing-textcolor;
-            font-weight: 800;
+        color:$landing-textcolor;
+        font-weight: 800;
         
-        padding: 2rem;
+        padding: 2rem 0 5rem 0;
     }
-    
+    p{
+        
+        padding-top: 10%;
+    }
 }
 .project-grid{
+    z-index: 0;
     display: grid;
     grid-template-columns: repeat(3, 33.33%);
     justify-items: center;

@@ -22,10 +22,15 @@
 .recent-projects h1 {
   color: #0496bb;
   font-weight: 800;
-  padding: 2rem;
+  padding: 2rem 0 5rem 0;
+}
+
+.recent-projects p {
+  padding-top: 10%;
 }
 
 .project-grid {
+  z-index: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: (33.33%)[3];
@@ -215,8 +220,8 @@
 .menu-btn {
   position: fixed;
   z-index: 1;
-  right: 2rem;
-  top: 1rem;
+  right: 3rem;
+  top: 2rem;
   height: 20px;
   width: 28px;
   cursor: pointer;
@@ -225,12 +230,13 @@
 }
 
 .menu-btn .burger {
+  z-index: 3;
   position: absolute;
   left: 0px;
   top: 0.5rem;
   width: 18px;
   height: 3px;
-  background-color: white;
+  background-color: #0496bb;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -290,6 +296,7 @@
 }
 
 .nav .nav-bar {
+  background-color: #272727;
   z-index: 1;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,12 +312,14 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 20vh;
+  height: 30vh;
   overflow: hidden;
   list-style-type: none;
   padding-right: 1rem;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
+  border: 1px;
+  border-bottom-left-radius: 600px 100px;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
