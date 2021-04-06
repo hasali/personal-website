@@ -3,11 +3,17 @@ $header-textcolor: rgb(6, 4, 34);
 $secondary-textcolor:white;
 $landing-textcolor:rgb(4, 150, 187);
 $about-textcolor: rgb(136, 136, 136);
+
 @font-face{
     font-family: QuickSand;
     src:url('Quicksand-VariableFont_wght.ttf');
 }
 *{
+    a{
+        color: $secondary-textcolor;
+        text-decoration: none;
+     }
+    scroll-behavior: smooth;
     box-sizing: border-box;
     margin: 0;
     padding: 0;

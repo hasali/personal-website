@@ -1,7 +1,7 @@
 @import 'helpers';
 
 
-.recent-projects{
+.future-projects{
     
     margin-top: 3rem;
     height:100vh;
@@ -12,7 +12,7 @@
 
         h1{
             
-            color:$landing-textcolor;
+            color:$primary-color;
             font-weight: 800;
             
             padding: 2rem 0 1rem 0;
@@ -31,10 +31,10 @@
         }
     }
 }
-.project-grid{
+#sec3 > .project-grid{
     z-index: 0;
     display: grid;
-    grid-template-columns: repeat(3, 33.33%);
+    grid-template-columns: repeat(2, 50%);
     justify-items: center;
     position: relative;
     width: 81vw;

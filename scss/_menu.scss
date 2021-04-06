@@ -60,6 +60,7 @@
     }
 }
 
+
 .nav{
     
     position: fixed;
@@ -94,5 +95,16 @@
         &.open{
             transform: translateX(0);
         }
+        .nav-item{
+            a{
+                
+                @include transition-ease;
+                &:hover{
+                    color: $landing-textcolor;
+                }
+            }
+
+        }
+       
     }
 }

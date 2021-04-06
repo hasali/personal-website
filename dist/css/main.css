@@ -4,10 +4,16 @@
 }
 
 * {
+  scroll-behavior: smooth;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin: 0;
   padding: 0;
+}
+
+* a {
+  color: white;
+  text-decoration: none;
 }
 
 .recent-projects {
@@ -19,14 +25,23 @@
   text-align: center;
 }
 
-.recent-projects h1 {
+.recent-projects .projects-intro h1 {
   color: #0496bb;
   font-weight: 800;
-  padding: 2rem 0 5rem 0;
+  padding: 2rem 0 1rem 0;
 }
 
-.recent-projects p {
-  padding-top: 10%;
+.recent-projects .projects-intro p {
+  padding-bottom: 5rem;
+}
+
+.recent-projects .projects-intro p a {
+  text-decoration: none;
+}
+
+.recent-projects .projects-intro p .name {
+  color: #0496bb;
+  font-weight: bold;
 }
 
 .project-grid {
@@ -120,13 +135,154 @@
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
   color: white;
-  margin: 5px;
+  margin: 15px;
   opacity: 0;
   z-index: 1;
 }
 
 .project-card figcaption p {
-  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.project-card figcaption a:link, .project-card figcaption a:visited {
+  border: 2px solid #0496bb;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-card figcaption a:link:hover, .project-card figcaption a:visited:hover {
+  background-color: #0496bb;
+}
+
+.future-projects {
+  margin-top: 3rem;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.future-projects .projects-intro h1 {
+  color: #272727;
+  font-weight: 800;
+  padding: 2rem 0 1rem 0;
+}
+
+.future-projects .projects-intro p {
+  padding-bottom: 5rem;
+}
+
+.future-projects .projects-intro p a {
+  text-decoration: none;
+}
+
+.future-projects .projects-intro p .name {
+  color: #0496bb;
+  font-weight: bold;
+}
+
+#sec3 > .project-grid {
+  z-index: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (50%)[2];
+      grid-template-columns: repeat(2, 50%);
+  justify-items: center;
+  position: relative;
+  width: 81vw;
+  margin: 0 auto 0 auto;
+}
+
+.project-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  height: 240px;
+  width: 360px;
+  background: #272727;
+}
+
+.project-card #anical-bgimg {
+  background: url("../img/AniCal-Backdrop.jpg") no-repeat;
+}
+
+.project-card #casa-bgimg {
+  background: url("../img/casanova-Backdrop.jpg") no-repeat;
+}
+
+.project-card #pwu-bgimg {
+  background-color: #0f0f0f;
+}
+
+.project-card .img-background {
+  background-position: center;
+  background-size: auto;
+  position: absolute;
+  border-radius: 13px;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-card:hover {
+  -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+          box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
+}
+
+.project-card:hover .logo-container {
+  opacity: 0;
+  z-index: -1;
+}
+
+.project-card:hover .img-background {
+  opacity: 0;
+  z-index: -1;
+}
+
+.project-card:hover figcaption {
+  opacity: 1;
+}
+
+.project-card .logo-container {
+  position: absolute;
+  z-index: 3;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.project-card .logo-container img {
+  height: 40%;
+  width: 70%;
+}
+
+.project-card figcaption {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  color: white;
+  margin: 15px;
+  opacity: 0;
+  z-index: 1;
+}
+
+.project-card figcaption p {
+  padding-bottom: 1rem;
 }
 
 .project-card figcaption a:link, .project-card figcaption a:visited {
@@ -329,6 +485,15 @@
           transform: translateX(0);
 }
 
+.nav .nav-bar .nav-item a {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .nav-bar .nav-item a:hover {
+  color: #0496bb;
+}
+
 ::-webkit-scrollbar {
   width: 9px;
 }
@@ -343,13 +508,8 @@
 
 body {
   position: relative;
-  background: url("../img/gplaypattern_@2X.png");
   font-family: QuickSand;
   line-height: 2rem;
-}
-
-.title {
-  padding-top: 40vh;
 }
 
 .landing-page-wrapper {
@@ -364,39 +524,134 @@ body {
   width: 100%;
   position: absolute;
   z-index: 2;
-  padding-left: 10%;
   line-height: 1;
   overflow: hidden;
   text-align: left;
   background: #272727;
   color: white;
+  border-bottom: 5px solid #0496bb;
 }
 
-.landing-page-wrapper .landing-page .name {
+.landing-page-wrapper .landing-page .title {
+  padding-top: 20vh;
+  margin-left: 10vw;
+}
+
+.landing-page-wrapper .landing-page .title .name {
   font-size: 6rem;
   padding-bottom: 1rem;
-  margin-bottom: 1rem;
-  border-bottom: 2px solid #fff;
   color: #0496bb;
 }
 
-.landing-page-wrapper .landing-page .name .last {
-  font-weight: 700;
+.landing-page-wrapper .landing-page .title .name .last {
+  color: white;
 }
 
-.nav-bar {
-  z-index: 0;
+.landing-page-wrapper .landing-page .title > span {
+  display: block;
+  width: 100px;
+  height: 3px;
+  background: #0496bb;
+}
+
+.landing-page-wrapper .landing-page .title > span::after {
+  content: '';
+  position: absolute;
+  display: block;
+  -webkit-transform: translate(4rem, 1rem);
+          transform: translate(4rem, 1rem);
+  width: 100px;
+  height: 3px;
+  background: #0496bb;
+}
+
+.landing-page-wrapper .landing-page .anchors {
+  padding-top: 2rem;
   list-style-type: none;
-  margin: 0;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 1rem 1rem 1rem 0;
+  font-weight: 600;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item .sleeve-item {
+  z-index: 1;
+  -webkit-transform: translateX(-125%);
+          transform: translateX(-125%);
+  color: #0496bb;
+  opacity: 0;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item .sleeve-item.slide {
+  -webkit-transform: translateX(0%);
+          transform: translateX(0%);
+  opacity: 1;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item .sleeve {
+  width: 10vw;
+  height: 1.5rem;
+  background: #272727;
+  z-index: 2;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item .lid-wrapper {
+  margin-right: 5px;
+  padding-right: 5px;
+  width: 14px;
+  height: 1.5rem;
+  z-index: 4;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item .lid-wrapper:hover {
+  cursor: pointer;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item .lid-wrapper .lid {
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+  display: inline-block;
+  z-index: 1;
+  width: 2.5px;
+  height: 1.3rem;
+  background: white;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item .lid-wrapper .lid.slide {
+  background: #0496bb;
+  -webkit-transform: rotate(-25deg);
+          transform: rotate(-25deg);
 }
 
 h1, h2, h3 {
   font-weight: 400;
 }
 
-a {
-  color: white;
-  text-decoration: none;
+.subtitle {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+
+.subtitle::before {
+  content: '';
+  width: 15rem;
+  height: 0.1rem;
+  top: 60%;
+  left: 200px;
+  background-color: #0496bb;
+  border: 2px #0496bb;
+  border-radius: 500px;
 }
 
 main {
@@ -408,6 +663,7 @@ footer {
   width: 100%;
   height: 15rem;
   background-color: #0496bb;
+  border-top: 5px solid #272727;
 }
 
 footer .footer-container {
