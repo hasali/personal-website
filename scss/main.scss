@@ -45,7 +45,7 @@ body{
       color: $secondary-textcolor;
       border-bottom: 5px solid $landing-textcolor;
       .title{
-         padding-top: 20vh;
+         padding-top: 15vh;
          margin-left: 10vw;
          
          .name{
@@ -88,8 +88,10 @@ body{
             font-weight: 600;
             
             .sleeve-item{
+               word-spacing: 3px;
                z-index: 1;
                transform: translateX(-125%);
+               padding-top: 5px;
                color:$landing-textcolor;
                opacity:0;
                @include transition-ease;
@@ -106,9 +108,9 @@ body{
                
             }
             .lid-wrapper{
-               margin-right:5px;
+               //margin-right:5px;
                padding-right: 5px;
-               width: 14px;
+               width: 1.5rem;
                height: 1.5rem;
                z-index: 4;
                //background: $secondary-textcolor;
@@ -120,13 +122,18 @@ body{
                   @include transition-ease;
                   display: inline-block;
                   z-index:1;
-                  width: 2.5px;
-                  height: 1.3rem;
+                  width: 1.3rem;
+                  height: 0.2rem;
                   background: $secondary-textcolor;
+                  //transform: translateY(-2px);
+                  
                   &.slide{
                      background:$landing-textcolor;
-                     transform: rotate(-25deg);
+                     transform:rotate(245deg);
+                     
+                     
                   }
+                  
                }
             }
          }

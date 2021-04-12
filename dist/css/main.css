@@ -157,7 +157,34 @@
   background-color: #0496bb;
 }
 
+.git-button-wrapper {
+  padding-top: 20vh;
+}
+
+.git-button-wrapper .git-button {
+  padding: auto;
+  width: 200px;
+  margin: auto;
+  display: block;
+  color: #0496bb;
+  font-weight: 600;
+  background-color: white;
+  border: 2px solid #0496bb;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+.git-button-wrapper .git-button:hover {
+  cursor: pointer;
+  color: white;
+  background-color: #0496bb;
+}
+
 .future-projects {
+  border-bottom: 1px solid rgba(211, 211, 211, 0.486);
   margin-top: 3rem;
   height: 100vh;
   -webkit-box-align: center;
@@ -186,18 +213,21 @@
 }
 
 #sec3 > .project-grid {
-  z-index: 0;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (50%)[2];
-      grid-template-columns: repeat(2, 50%);
+  grid-auto-flow: column;
   justify-items: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -webkit-column-gap: 60px;
+          column-gap: 60px;
   position: relative;
-  width: 81vw;
-  margin: 0 auto 0 auto;
+  width: 50vw;
 }
 
-.project-card {
+#sec3 > .project-grid .project-card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -213,89 +243,37 @@
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   height: 240px;
-  width: 360px;
-  background: #272727;
+  width: 330px;
+  background-color: white;
 }
 
-.project-card #anical-bgimg {
-  background: url("../img/AniCal-Backdrop.jpg") no-repeat;
+#sec3 > .project-grid .project-card .project-content-wrapper {
+  margin: 0 10px 0 10px;
 }
 
-.project-card #casa-bgimg {
-  background: url("../img/casanova-Backdrop.jpg") no-repeat;
+#sec3 > .project-grid .project-card .project-content-wrapper h1 {
+  padding-bottom: 5px;
 }
 
-.project-card #pwu-bgimg {
-  background-color: #0f0f0f;
+#sec3 > .project-grid .project-card .project-content-wrapper div {
+  color: #0496bb;
+  padding-top: 20px;
 }
 
-.project-card .img-background {
-  background-position: center;
-  background-size: auto;
-  position: absolute;
-  border-radius: 13px;
-  z-index: 2;
-  height: 100%;
-  width: 100%;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+#sec3 > .project-grid .project-card .project-content-wrapper div p {
+  font-size: 12px;
 }
 
-.project-card:hover {
-  -webkit-box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
-          box-shadow: 0 5px 9px 0 rgba(0, 0, 0, 0.3);
-}
-
-.project-card:hover .logo-container {
-  opacity: 0;
-  z-index: -1;
-}
-
-.project-card:hover .img-background {
-  opacity: 0;
-  z-index: -1;
-}
-
-.project-card:hover figcaption {
-  opacity: 1;
-}
-
-.project-card .logo-container {
+#sec3 > .project-grid .project-card .logo-container {
   position: absolute;
   z-index: 3;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
-.project-card .logo-container img {
+#sec3 > .project-grid .project-card .logo-container img {
   height: 40%;
   width: 70%;
-}
-
-.project-card figcaption {
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-  color: white;
-  margin: 15px;
-  opacity: 0;
-  z-index: 1;
-}
-
-.project-card figcaption p {
-  padding-bottom: 1rem;
-}
-
-.project-card figcaption a:link, .project-card figcaption a:visited {
-  border: 2px solid #0496bb;
-  padding: 10px 20px;
-  text-align: center;
-  text-decoration: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
-}
-
-.project-card figcaption a:link:hover, .project-card figcaption a:visited:hover {
-  background-color: #0496bb;
 }
 
 .about {
@@ -533,7 +511,7 @@ body {
 }
 
 .landing-page-wrapper .landing-page .title {
-  padding-top: 20vh;
+  padding-top: 15vh;
   margin-left: 10vw;
 }
 
@@ -583,9 +561,11 @@ body {
 }
 
 .landing-page-wrapper .landing-page .anchors .nav-item .sleeve-item {
+  word-spacing: 3px;
   z-index: 1;
   -webkit-transform: translateX(-125%);
           transform: translateX(-125%);
+  padding-top: 5px;
   color: #0496bb;
   opacity: 0;
   -webkit-transition: all 0.5s ease-in-out;
@@ -606,9 +586,8 @@ body {
 }
 
 .landing-page-wrapper .landing-page .anchors .nav-item .lid-wrapper {
-  margin-right: 5px;
   padding-right: 5px;
-  width: 14px;
+  width: 1.5rem;
   height: 1.5rem;
   z-index: 4;
 }
@@ -622,15 +601,15 @@ body {
   transition: all 0.5s ease-in-out;
   display: inline-block;
   z-index: 1;
-  width: 2.5px;
-  height: 1.3rem;
+  width: 1.3rem;
+  height: 0.2rem;
   background: white;
 }
 
 .landing-page-wrapper .landing-page .anchors .nav-item .lid-wrapper .lid.slide {
   background: #0496bb;
-  -webkit-transform: rotate(-25deg);
-          transform: rotate(-25deg);
+  -webkit-transform: rotate(245deg);
+          transform: rotate(245deg);
 }
 
 h1, h2, h3 {

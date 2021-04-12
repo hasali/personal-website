@@ -132,3 +132,26 @@
     }
     
 }
+.git-button-wrapper{
+    padding-top: 20vh;
+    .git-button{
+        padding:auto;
+        width: 200px;
+        margin: auto;
+        display: block;
+        color: $landing-textcolor;
+        font-weight: 600;
+        background-color: $secondary-textcolor;
+        border: 2px solid $landing-textcolor;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        @include fast-transition;
+        &:hover{
+            cursor: pointer;
+            color:$secondary-textcolor;
+            background-color: $landing-textcolor;   
+        }
+        
+    }
+}
