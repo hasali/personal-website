@@ -463,13 +463,55 @@
           transform: translateX(0);
 }
 
+.nav .nav-bar .nav-item {
+  -webkit-transform: translateX(50vw);
+          transform: translateX(50vw);
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.nav .nav-bar .nav-item.open {
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
+}
+
+.nav .nav-bar .nav-item:active > a {
+  color: #0496bb;
+}
+
 .nav .nav-bar .nav-item a {
+  display: inline-block;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
 
 .nav .nav-bar .nav-item a:hover {
   color: #0496bb;
+}
+
+.nav .nav-item:nth-child(1) {
+  -webkit-transition-delay: 0.25s;
+          transition-delay: 0.25s;
+}
+
+.nav .nav-item:nth-child(2) {
+  -webkit-transition-delay: 0.35s;
+          transition-delay: 0.35s;
+}
+
+.nav .nav-item:nth-child(3) {
+  -webkit-transition-delay: 0.45s;
+          transition-delay: 0.45s;
+}
+
+.nav .nav-item:nth-child(4) {
+  -webkit-transition-delay: 0.55s;
+          transition-delay: 0.55s;
+}
+
+.nav .nav-item:nth-child(5) {
+  -webkit-transition-delay: 0.65s;
+          transition-delay: 0.65s;
 }
 
 ::-webkit-scrollbar {
@@ -651,7 +693,7 @@ footer .footer-container {
   font-size: 0.9rem;
 }
 
-footer .footer-container i + i {
+footer .footer-container a + a {
   margin-left: 50px;
 }
 

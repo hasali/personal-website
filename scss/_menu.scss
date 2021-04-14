@@ -96,15 +96,28 @@
             transform: translateX(0);
         }
         .nav-item{
+            
+            transform: translateX(50vw);
+            @include transition-ease;
+
+            &.open{
+                transform:translateX(0);
+            }
+            &:active > a{
+                color: $landing-textcolor;
+            }
             a{
-                
+                display: inline-block;
                 @include transition-ease;
                 &:hover{
                     color: $landing-textcolor;
                 }
             }
-
+        }   
+    }
+    @for $i from 1 through 5{
+        .nav-item:nth-child(#{$i}){
+            transition-delay: ($i * 0.1s) + 0.15s;
         }
-       
     }
 }

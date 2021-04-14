@@ -3,7 +3,9 @@
 @import 'futureProjects';
 @import 'about';
 @import 'menu';
+
 @import 'helpers';
+
 
 ::-webkit-scrollbar{
    width: 9px;
@@ -181,7 +183,7 @@ footer{
       padding-top:6%;
       
       font-size: 0.9rem;
-         i + i{
+         a + a{
             margin-left: 50px;
          }
       .disclaimer{
@@ -189,3 +191,4 @@ footer{
       }
    }
 }
+@import 'responsive';

@@ -3,7 +3,7 @@ const menuBtn = document.querySelector(".menu-btn");
 const hamburger = document.querySelector('.burger');
 const nav = document.querySelector('.nav');
 const menuNav = document.querySelector('.nav-bar');
-
+const navItems = document.querySelectorAll('.nav-item');
 const lidWrapper = document.querySelectorAll(".lid-wrapper");
 const lid = document.querySelectorAll(".lid");
 const sleeveItem = document.querySelectorAll(".sleeve-item");
@@ -15,6 +15,8 @@ menuBtn.addEventListener('click', ()=>{
     hamburger.classList.toggle('open');
     nav.classList.toggle('open');
     menuNav.classList.toggle('open');
+    navItems.forEach(item => item.classList.toggle('open'));     
+    
 });
 
 
