@@ -1,14 +1,28 @@
 //@import 'helpers';
-
-// @media screen and (min-width:950px){
-    
-//     .landing-page{
-
-//         background: $secondary-textcolor;
-//     }
-// }
+@include media-xs{
+    main{
+        padding: 1.2rem 3rem;
+    }
+}
+@include media-sm{
+    #sec3 > .project-grid{
+        grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
+    }
+}
 
 @include media-md{
-     
+    .recent-projects{
+        height: auto;
+    }
+     .project-grid{
+         grid-template-columns:repeat(auto-fill, minmax(360px,1fr)) ;
+     }
+     .about{
+         height: auto;
+         .interests{
+             
+            grid-template-columns: repeat(auto-fill, minmax(200px,1fr));
+         }
+     }
 }
     

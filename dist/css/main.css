@@ -18,10 +18,8 @@
 
 .recent-projects {
   margin-top: 3rem;
+  max-height: auto;
   height: 100vh;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   text-align: center;
 }
 
@@ -46,13 +44,17 @@
 
 .project-grid {
   z-index: 0;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (33.33%)[3];
-      grid-template-columns: repeat(3, 33.33%);
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(300px, 1fr));
+  row-gap: 2rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
   justify-items: center;
-  position: relative;
-  width: 81vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0 auto 0 auto;
 }
 
@@ -72,7 +74,7 @@
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
   border-radius: 15px;
   height: 240px;
-  width: 360px;
+  max-width: 360px;
   background: #272727;
 }
 
@@ -149,8 +151,8 @@
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
-  -webkit-transition: all 0.5s ease-in-out;
-  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.2s linear;
+  transition: all 0.2s linear;
 }
 
 .project-card figcaption a:link:hover, .project-card figcaption a:visited:hover {
@@ -213,18 +215,19 @@
 }
 
 #sec3 > .project-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-auto-flow: column;
+  z-index: 0;
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (minmax(300px, 1fr))[2];
+      grid-template-columns: repeat(2, minmax(300px, 1fr));
+  row-gap: 2rem;
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
   justify-items: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -webkit-column-gap: 60px;
-          column-gap: 60px;
-  position: relative;
-  width: 50vw;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto 0 auto;
 }
 
 #sec3 > .project-grid .project-card {
@@ -280,6 +283,7 @@
   margin-top: 3rem;
   height: 100vh;
   margin-bottom: 3rem;
+  text-align: center;
 }
 
 .about .bio {
@@ -288,7 +292,6 @@
   display: grid;
   -ms-grid-rows: 30% 80%;
       grid-template-rows: 30% 80%;
-  margin: 0 5rem 0 5rem;
   padding-bottom: 3rem;
   text-align: center;
   justify-items: center;
@@ -306,12 +309,15 @@
 }
 
 .about .interests {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (33%)[3];
-      grid-template-columns: repeat(3, 33%);
+  display: -ms-inline-grid;
+  display: inline-grid;
+  -ms-grid-columns: (minmax(200px, 1fr))[3];
+      grid-template-columns: repeat(3, minmax(200px, 1fr));
+  -webkit-column-gap: 2rem;
+          column-gap: 2rem;
+  row-gap: 3.5rem;
   justify-items: center;
-  margin: 7rem 5rem 0 5rem;
+  margin: 7rem auto 0 auto;
   text-align: center;
 }
 
@@ -319,6 +325,7 @@
   height: 300px;
   width: 300px;
   text-align: center;
+  max-width: 300px;
 }
 
 .about .interests .interest-container figure {
@@ -699,5 +706,35 @@ footer .footer-container a + a {
 
 footer .footer-container .disclaimer {
   padding-top: 1rem;
+}
+
+@media screen and (max-width: 590px) {
+  main {
+    padding: 1.2rem 3rem;
+  }
+}
+
+@media screen and (max-width: 880px) {
+  #sec3 > .project-grid {
+    -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .recent-projects {
+    height: auto;
+  }
+  .project-grid {
+    -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  }
+  .about {
+    height: auto;
+  }
+  .about .interests {
+    -ms-grid-columns: (minmax(200px, 1fr))[auto-fill];
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
 }
 /*# sourceMappingURL=main.css.map */

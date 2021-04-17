@@ -6,17 +6,17 @@
 }
 
 @mixin media-md{
-    @media screen and (max-width:950px){
+    @media screen and (max-width:1200px){
         @content;
     }
 }
 @mixin media-sm{
-    @media screen and(max-width:1024px){
+    @media screen and (max-width:880px){
         @content;
     }
 }
 @mixin media-xs{
-    @media screen and(max-width:1600px){
+    @media screen and (max-width:590px){
         @content;
     }
 }

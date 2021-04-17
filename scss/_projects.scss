@@ -4,8 +4,9 @@
 .recent-projects{
     
     margin-top: 3rem;
+    max-height: auto;
     height:100vh;
-    align-items: center;
+   // align-items: center;
     text-align: center;
     //width:500px;
     .projects-intro{
@@ -33,28 +34,30 @@
 }
 .project-grid{
     z-index: 0;
-    display: grid;
-    grid-template-columns: repeat(3, 33.33%);
+    display: inline-grid;
+    grid-template-columns:repeat(3, minmax(300px,1fr));
+    //grid-template-rows:repeat(3, minmax(300px,1fr));
+    row-gap: 2rem;
+    column-gap: 2rem;
     justify-items: center;
-    position: relative;
-    width: 81vw;
+    align-items: center;
+    //min-width: 0;
     margin: 0 auto 0 auto;
-    //padding: 2rem 0 2rem 0;
- 
+
 }
 .project-card{
     display: flex;
     position: relative;
     justify-content: center;
-    //align-items: center;
     flex-direction: column;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     border-radius: 15px;
     height: 240px;
-    width: 360px;
+    max-width: 360px;
     background:$primary-color;
-    //@include transition-ease;
+    
     #anical-bgimg{
+        
         background:url("../img/AniCal-Backdrop.jpg") no-repeat;
     }
     #casa-bgimg{
@@ -124,7 +127,7 @@
             padding: 10px 20px;
             text-align: center;
             text-decoration: none;
-            @include transition-ease;
+            @include fast-transition;
             &:hover{
                 background-color: $landing-textcolor;
             }
