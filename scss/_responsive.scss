@@ -1,16 +1,68 @@
 //@import 'helpers';
 @include media-xs{
+    .landing-page-wrapper{
+        height:75vh;
+        .landing-page{
+            .anchors{
+                .nav-item{
+
+                    visibility: hidden;
+                }
+            }
+        }
+    }
+    
+    .nav{
+        visibility: visible;
+        width: 100vw;
+        top:0;
+        height: 10vh;
+        .menu-btn{
+            visibility: hidden;
+            opacity: 0;
+            @include fast-transition;
+            
+        }
+        .nav-bar{
+            padding-right:0;
+            border-bottom-right-radius: 0px 0px;
+            height: 10vh;
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            justify-items: center;
+            transform: translateX(0);
+            .nav-item{
+                transform:translateX(0);
+            }
+        }
+    }
     main{
         padding: 1.2rem 3rem;
-    }
+        
+        }
+
+    
 }
 @include media-sm{
+    .future-projects{
+        height:auto;
+    }
     #sec3 > .project-grid{
         grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
     }
 }
 
 @include media-md{
+    .landing-page-wrapper{
+        .landing-page{
+            .title{
+
+                .name{
+                    font-size: 5.4rem;
+                }
+            }
+        }
+    }
     .recent-projects{
         height: auto;
     }

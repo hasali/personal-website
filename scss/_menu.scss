@@ -1,72 +1,16 @@
 
 @import 'helpers';
 
-.menu-btn{
-    
-    position: fixed;
-    z-index: 1;
-    right: 3rem;
-    top: 2rem;
-    height: 20px;
-    width: 28px;
-    cursor: pointer;
-    //transform: translate(5px);
-    @include transition-ease;
 
-    .burger{
-        z-index:3;
-        position: absolute;
-        left: 0px;
-        top: 0.5rem;
-        width: 18px;
-        height: 3px;
-        background-color: $landing-textcolor;
-        @include transition-ease;
-
-        &::before{
-            content:'';
-            position: absolute;
-            top: -8px;
-            left: 0px;
-            width: 28px;
-            height: 3px;
-            background-color: $landing-textcolor;
-            @include transition-ease
-        }
-        &::after{
-            content:'';
-            position: absolute;
-            top: 8px;
-            width: 28px;
-            height: 3px;
-            left: 0px;
-            background-color: $landing-textcolor;
-            @include transition-ease
-        }
-
-        &.open{
-            
-            background: transparent;
-            @include transition-ease;
-        }
-        &.open::before{
-            transform: rotate(45deg) translate(5px,8px);
-
-        }
-        &.open::after{
-            //width: 28px;
-            transform: rotate(-45deg) translate(3px, -7px);
-        }
-    }
-}
 
 
 .nav{
     
     position: fixed;
+    //
     z-index: 1;
     top: 0;
-    right: 0;
+    left: 0;
     width: 20vw;
     opacity: 0.98;
     visibility: hidden;
@@ -74,9 +18,71 @@
     &.open{
         visibility: visible;
     }
-    .nav-bar{
-        background-color: $primary-color;
+    .menu-btn{
+        margin-left: 5rem;
+        opacity: 1;
+    
+        visibility: visible;
+        position: absolute;
         z-index: 1;
+        
+        top: 2rem;
+        height: 20px;
+        width: 28px;
+        cursor: pointer;
+        //transform: translate(5px);
+        @include transition-ease;
+    
+        .burger{
+            z-index:3;
+            position: absolute;
+            left: 0px;
+            top: 0.5rem;
+            width: 18px;
+            height: 3px;
+            background-color: $landing-textcolor;
+            @include transition-ease;
+    
+            &::before{
+                content:'';
+                position: absolute;
+                top: -8px;
+                left: 0px;
+                width: 28px;
+                height: 3px;
+                background-color: $landing-textcolor;
+                @include transition-ease
+            }
+            &::after{
+                content:'';
+                position: absolute;
+                top: 8px;
+                width: 28px;
+                height: 3px;
+                left: 0px;
+                background-color: $landing-textcolor;
+                @include transition-ease
+            }
+    
+            &.open{
+                
+                background: transparent;
+                @include transition-ease;
+            }
+            &.open::before{
+                transform: rotate(45deg) translate(5px,8px);
+    
+            }
+            &.open::after{
+                //width: 28px;
+                transform: rotate(-45deg) translate(3px, -7px);
+            }
+        }
+    }
+    .nav-bar{
+       // position: absolute;
+        background-color: $primary-color;
+        z-index: 2;
         display: flex;
         right: 3rem;
         flex-flow: column wrap;
@@ -87,9 +93,9 @@
         //background: white;
         list-style-type: none;
         padding-right: 1rem;
-        transform: translateX(100%);
+        transform: translateX(-100%);
         border: 1px;
-        border-bottom-left-radius: 600px 100px;
+        border-bottom-right-radius: 600px 100px;
         @include transition-ease;
 
         &.open{
@@ -97,7 +103,7 @@
         }
         .nav-item{
             
-            transform: translateX(50vw);
+            transform: translateX(-50vw);
             @include transition-ease;
 
             &.open{
