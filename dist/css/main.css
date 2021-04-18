@@ -675,17 +675,6 @@ h1, h2, h3 {
   display: inline-block;
 }
 
-.subtitle::before {
-  content: '';
-  width: 15rem;
-  height: 0.1rem;
-  top: 60%;
-  left: 200px;
-  background-color: #0496bb;
-  border: 2px #0496bb;
-  border-radius: 500px;
-}
-
 main {
   padding: 1.2rem 7rem;
 }

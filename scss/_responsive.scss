@@ -1,4 +1,4 @@
-//@import 'helpers';
+
 @include media-xs{
     .landing-page-wrapper{
         height:75vh;
@@ -10,8 +10,7 @@
                 }
             }
         }
-    }
-    
+    }   
     .nav{
         visibility: visible;
         width: 100vw;
@@ -20,8 +19,7 @@
         .menu-btn{
             visibility: hidden;
             opacity: 0;
-            @include fast-transition;
-            
+            @include fast-transition;           
         }
         .nav-bar{
             padding-right:0;
@@ -40,8 +38,6 @@
         padding: 1.2rem 3rem;
         
         }
-
-    
 }
 @include media-sm{
     .future-projects{
@@ -51,7 +47,6 @@
         grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
     }
 }
-
 @include media-md{
     .landing-page-wrapper{
         .landing-page{

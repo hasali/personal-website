@@ -4,7 +4,6 @@
 @mixin fast-transition{
     transition: all 0.2s linear;
 }
-
 @mixin media-md{
     @media screen and (max-width:1200px){
         @content;

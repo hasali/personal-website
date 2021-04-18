@@ -1,6 +1,5 @@
 @import 'helpers';
 
-
 .future-projects{
     padding-bottom: 2rem;
     border-bottom: 1px solid rgba(211, 211, 211, 0.486);
@@ -8,19 +7,13 @@
     height:100vh;
     align-items: center;
     text-align: center;
-    //width:500px;
     .projects-intro{
-
-        h1{
-            
+        h1{          
             color:$primary-color;
-            font-weight: 800;
-            
+            font-weight: 800;           
             padding: 2rem 0 1rem 0;
-        }
-        
-        p{
-            
+        }        
+        p{           
             padding-bottom: 5rem;
             a{
                 text-decoration: none;
@@ -35,18 +28,15 @@
 #sec3 > .project-grid{
     z-index: 0;
     display: inline-grid;
-    grid-template-columns:repeat(2, minmax(300px,1fr));
-    
+    grid-template-columns:repeat(2, minmax(300px,1fr));   
     row-gap: 2rem;
     column-gap: 2rem;
     justify-items: center;
     align-items: center;
-    //min-width: 0;
     margin: 0 auto 0 auto;
     .project-card{
         display: flex;
         position: relative;
-        //justify-self: stretch;
         justify-content: center;
         flex-direction: column;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
@@ -54,7 +44,6 @@
         height: 240px;
         width: 330px;
         background-color:$secondary-textcolor;
-        //@include transition-ease;
         .project-content-wrapper{
             margin:0 10px 0 10px;
             h1{
@@ -71,12 +60,9 @@
         }
         .logo-container{
             position: absolute;
-            //top:50%;
-            //align-items: center;
             z-index:3;
             @include transition-ease;
             img{ 
-               // z-index: 2;
                 height: 40%;
                 width: 70%;
                  

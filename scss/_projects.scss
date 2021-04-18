@@ -1,26 +1,20 @@
 @import 'helpers';
 
-
-.recent-projects{
-    
+.recent-projects{  
     margin-top: 3rem;
     max-height: auto;
     height:100vh;
    // align-items: center;
     text-align: center;
     //width:500px;
-    .projects-intro{
-        
-        h1{
-            
+    .projects-intro{      
+        h1{         
             color:$landing-textcolor;
             font-weight: 800;
             
             padding: 2rem 0 1rem 0;
-        }
-        
-        p{
-            
+        }       
+        p{           
             padding-bottom: 5rem;
             a{
                 text-decoration: none;
@@ -36,14 +30,11 @@
     z-index: 0;
     display: inline-grid;
     grid-template-columns:repeat(3, minmax(300px,1fr));
-    //grid-template-rows:repeat(3, minmax(300px,1fr));
     row-gap: 2rem;
     column-gap: 2rem;
     justify-items: center;
     align-items: center;
-    //min-width: 0;
     margin: 0 auto 0 auto;
-
 }
 .project-card{
     z-index: 0;
@@ -55,14 +46,11 @@
     border-radius: 15px;
     height: 240px;
     max-width: 360px;
-    background:$primary-color;
-    
-    #anical-bgimg{
-        
+    background:$primary-color;   
+    #anical-bgimg{       
         background:url("../img/AniCal-Backdrop.jpg") no-repeat;
     }
-    #casa-bgimg{
-        
+    #casa-bgimg{       
         background:url("../img/casanova-Backdrop.jpg") no-repeat;
     }
     #pwu-bgimg{
@@ -90,36 +78,24 @@
             z-index:-1;
         }
         figcaption{
-            
-            //@include transition-ease;
             opacity: 1;
         }
     }
     .logo-container{
         position: absolute;
-        //top:50%;
-        //align-items: center;
         z-index:3;
         @include transition-ease;
         img{ 
-           // z-index: 2;
             height: 40%;
-            width: 70%;
-             
-        }
-        
+            width: 70%;            
+        }       
     }
     figcaption{
         @include transition-ease;
         color: $secondary-textcolor;
         margin: 15px;
-        //position: absolute;
-        //margin: auto;
-        //visibility: hidden;
         opacity:0;
         z-index:1;
-        //text-align: center;
-
         p{
             padding-bottom: 1rem;
         }
@@ -133,8 +109,7 @@
                 background-color: $landing-textcolor;
             }
         }
-    }
-    
+    }  
 }
 .git-button-wrapper{
     padding-top: 20vh;
@@ -155,7 +130,6 @@
             cursor: pointer;
             color:$secondary-textcolor;
             background-color: $landing-textcolor;   
-        }
-        
+        }       
     }
 }
