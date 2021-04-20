@@ -36,6 +36,7 @@ body{
       color: $secondary-textcolor;
       border-bottom: 5px solid $landing-textcolor;
       .title{
+         width: auto;
          padding-top: 15vh;
          margin-left: 10vw;        
          .name{

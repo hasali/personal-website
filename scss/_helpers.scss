@@ -4,18 +4,23 @@
 @mixin fast-transition{
     transition: all 0.2s linear;
 }
-@mixin media-md{
+@mixin media-lg{
     @media screen and (max-width:1200px){
         @content;
     }
 }
-@mixin media-sm{
+@mixin media-md{
     @media screen and (max-width:880px){
         @content;
     }
 }
+@mixin media-sm{
+    @media screen and (max-width:590px), screen and (max-height: 620px) {
+        @content;
+    }
+}
 @mixin media-xs{
-    @media screen and (max-width:590px){
+    @media screen and (max-width:450px){
         @content;
     }
 }

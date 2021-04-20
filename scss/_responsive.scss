@@ -1,8 +1,18 @@
 
-@include media-xs{
+
+@include media-sm{
     .landing-page-wrapper{
         height:75vh;
         .landing-page{
+            .title{
+                padding-top: 8vh;
+                h2{
+                    font-size: 1.1rem;
+                }
+                .name{
+                    font-size: 4.5rem;
+                }
+            }
             .anchors{
                 .nav-item{
 
@@ -39,7 +49,28 @@
         
         }
 }
-@include media-sm{
+@include media-xs{
+    main{
+        padding: 1.2rem 0.5rem;
+    }
+    .landing-page-wrapper{
+        width: 150vw;
+        height: 65vh;
+        .landing-page{
+            .title{
+                
+                h2{
+                    font-size: 1rem;
+                }
+                .name{
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
+@include media-md{
+    
     .future-projects{
         height:auto;
     }
@@ -47,17 +78,8 @@
         grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
     }
 }
-@include media-md{
-    .landing-page-wrapper{
-        .landing-page{
-            .title{
-
-                .name{
-                    font-size: 5.4rem;
-                }
-            }
-        }
-    }
+@include media-lg{
+    
     .recent-projects{
         height: auto;
     }
@@ -72,4 +94,3 @@
          }
      }
 }
-    

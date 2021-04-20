@@ -29,7 +29,7 @@
 .project-grid{
     z-index: 0;
     display: inline-grid;
-    grid-template-columns:repeat(3, minmax(300px,1fr));
+    grid-template-columns:repeat(3, minmax(auto,1fr));
     row-gap: 2rem;
     column-gap: 2rem;
     justify-items: center;
@@ -45,7 +45,8 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.1);
     border-radius: 15px;
     height: 240px;
-    max-width: 360px;
+    width: 360px;
+    min-width: 150px;
     background:$primary-color;   
     #anical-bgimg{       
         background:url("../img/AniCal-Backdrop.jpg") no-repeat;
