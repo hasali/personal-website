@@ -19,7 +19,7 @@
 .recent-projects {
   margin-top: 3rem;
   max-height: auto;
-  height: 100vh;
+  height: 100%;
   text-align: center;
 }
 
@@ -162,7 +162,7 @@
 }
 
 .git-button-wrapper {
-  padding-top: 20vh;
+  padding-top: 10%;
 }
 
 .git-button-wrapper .git-button {
@@ -191,7 +191,7 @@
   padding-bottom: 2rem;
   border-bottom: 1px solid rgba(211, 211, 211, 0.486);
   margin-top: 3rem;
-  height: 100vh;
+  height: 100%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -284,7 +284,7 @@
 
 .about {
   margin-top: 3rem;
-  height: 100vh;
+  height: 100%;
   margin-bottom: 3rem;
   text-align: center;
 }
@@ -322,6 +322,7 @@
   justify-items: center;
   margin: 7rem auto 0 auto;
   text-align: center;
+  margin-bottom: 3rem;
 }
 
 .about .interests .interest-container {
@@ -366,8 +367,8 @@
   z-index: 1;
   top: 0;
   left: 0;
-  width: 20vw;
-  opacity: 0.98;
+  width: 250px;
+  opacity: 1;
   visibility: hidden;
 }
 
@@ -376,7 +377,7 @@
 }
 
 .nav .menu-btn {
-  margin-left: 5rem;
+  margin-left: 2rem;
   opacity: 1;
   visibility: visible;
   position: absolute;
@@ -458,7 +459,7 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 30vh;
+  height: 100vh;
   overflow: hidden;
   list-style-type: none;
   padding-right: 1rem;
@@ -466,6 +467,7 @@
           transform: translateX(-100%);
   border: 1px;
   border-bottom-right-radius: 600px 100px;
+  opacity: 0.95;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -549,6 +551,12 @@ body {
   width: 100vw;
   max-width: 100%;
   position: relative;
+  background-image: url("../img/splash-bg.png");
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .landing-page-wrapper .landing-page {
@@ -559,9 +567,9 @@ body {
   line-height: 1;
   overflow: hidden;
   text-align: left;
-  background: #272727;
   color: white;
   border-bottom: 5px solid #0496bb;
+  opacity: 0.9;
 }
 
 .landing-page-wrapper .landing-page .title {
@@ -691,7 +699,7 @@ footer {
 
 footer .footer-container {
   color: white;
-  padding-top: 6%;
+  margin-top: 6%;
   font-size: 0.9rem;
 }
 
@@ -703,7 +711,13 @@ footer .footer-container .disclaimer {
   padding-top: 1rem;
 }
 
-@media screen and (max-width: 590px), screen and (max-height: 620px) {
+@media screen and (max-height: 620px) {
+  .landing-page-wrapper {
+    height: 1000px;
+  }
+}
+
+@media screen and (max-width: 590px) {
   .landing-page-wrapper {
     height: 75vh;
   }

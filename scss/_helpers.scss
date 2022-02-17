@@ -15,12 +15,17 @@
     }
 }
 @mixin media-sm{
-    @media screen and (max-width:590px), screen and (max-height: 620px) {
+    @media screen and (max-width:590px) {
         @content;
     }
 }
 @mixin media-xs{
     @media screen and (max-width:450px){
+        @content;
+    }
+}
+@mixin media-sm-h{
+    @media screen and (max-height:620px){
         @content;
     }
 }

@@ -21,9 +21,18 @@ body{
 }
 .landing-page-wrapper{
    height: 100vh;
+  // max-height:100vh;
    width: 100vw;
    max-width: 100%;
    position: relative;
+   background-image: url("../img/splash-bg.png");
+   
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
    .landing-page{
       height: 100%;
       width: 100%;
@@ -32,9 +41,10 @@ body{
       line-height: 1;
       overflow: hidden;
       text-align: left;
-      background: $primary-color;
+      //background: $primary-color;
       color: $secondary-textcolor;
       border-bottom: 5px solid $landing-textcolor;
+      opacity: 0.9;
       .title{
          width: auto;
          padding-top: 15vh;
@@ -136,7 +146,7 @@ footer{
    border-top: 5px solid $primary-color;
    .footer-container{
       color: $secondary-textcolor;
-      padding-top:6%;     
+      margin-top:6%;     
       font-size: 0.9rem;
          a + a{
             margin-left: 50px;

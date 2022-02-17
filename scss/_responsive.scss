@@ -1,5 +1,9 @@
 
-
+@include media-sm-h{
+    .landing-page-wrapper{
+        height: 1000px;
+    }
+}
 @include media-sm{
     .landing-page-wrapper{
         height:75vh;

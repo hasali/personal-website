@@ -3,7 +3,7 @@
 .recent-projects{  
     margin-top: 3rem;
     max-height: auto;
-    height:100vh;
+    height:100%;
    // align-items: center;
     text-align: center;
     //width:500px;
@@ -113,7 +113,7 @@
     }  
 }
 .git-button-wrapper{
-    padding-top: 20vh;
+    padding-top: 10%;
     .git-button{
         padding:auto;
         width: 200px;
