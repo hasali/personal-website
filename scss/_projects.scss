@@ -4,7 +4,7 @@
     margin-top: 3rem;
     max-height: auto;
     height:100%;
-   // align-items: center;
+   align-items: center;
     text-align: center;
     //width:500px;
     .projects-intro{      
@@ -26,7 +26,7 @@
         }
     }
 }
-.project-grid{
+.project-grid-recent{
     z-index: 0;
     display: inline-grid;
     grid-template-columns:repeat(3, minmax(auto,1fr));
@@ -114,6 +114,7 @@
 }
 .git-button-wrapper{
     padding-top: 10%;
+    padding-bottom: 10%;
     .git-button{
         padding:auto;
         width: 200px;
@@ -121,7 +122,7 @@
         display: block;
         color: $landing-textcolor;
         font-weight: 600;
-        background-color: $secondary-textcolor;
+        //background-color: $secondary-textcolor;
         border: 2px solid $landing-textcolor;
         padding: 10px 20px;
         text-align: center;
