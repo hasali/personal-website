@@ -27,7 +27,7 @@
 }
 
 .recent-projects .projects-intro h1 {
-  color: #13b1d8;
+  color: #20a9df;
   font-weight: 800;
   padding: 2rem 0 1rem 0;
 }
@@ -41,7 +41,7 @@
 }
 
 .recent-projects .projects-intro p .name {
-  color: #13b1d8;
+  color: #20a9df;
   font-weight: bold;
 }
 
@@ -152,7 +152,7 @@
 }
 
 .project-card figcaption a:link, .project-card figcaption a:visited {
-  border: 2px solid #13b1d8;
+  border: 2px solid #20a9df;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -161,7 +161,7 @@
 }
 
 .project-card figcaption a:link:hover, .project-card figcaption a:visited:hover {
-  background-color: #13b1d8;
+  background-color: #20a9df;
 }
 
 .git-button-wrapper {
@@ -174,9 +174,9 @@
   width: 200px;
   margin: auto;
   display: block;
-  color: #13b1d8;
+  color: #20a9df;
   font-weight: 600;
-  border: 2px solid #13b1d8;
+  border: 2px solid #20a9df;
   padding: 10px 20px;
   text-align: center;
   text-decoration: none;
@@ -187,7 +187,7 @@
 .git-button-wrapper .git-button:hover {
   cursor: pointer;
   color: white;
-  background-color: #13b1d8;
+  background-color: #20a9df;
 }
 
 .future-projects {
@@ -380,7 +380,7 @@
   top: 0.5rem;
   width: 18px;
   height: 3px;
-  background-color: #13b1d8;
+  background-color: #20a9df;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -392,7 +392,7 @@
   left: 0px;
   width: 28px;
   height: 3px;
-  background-color: #13b1d8;
+  background-color: #20a9df;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -404,7 +404,7 @@
   width: 28px;
   height: 3px;
   left: 0px;
-  background-color: #13b1d8;
+  background-color: #20a9df;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
 }
@@ -449,7 +449,6 @@
   -webkit-transform: translateX(-100%);
           transform: translateX(-100%);
   border: 1px;
-  border-bottom-right-radius: 600px 100px;
   opacity: 0.95;
   -webkit-transition: all 0.5s ease-in-out;
   transition: all 0.5s ease-in-out;
@@ -473,7 +472,7 @@
 }
 
 .nav .nav-bar .nav-item:active > a {
-  color: #13b1d8;
+  color: #20a9df;
 }
 
 .nav .nav-bar .nav-item a {
@@ -483,7 +482,7 @@
 }
 
 .nav .nav-bar .nav-item a:hover {
-  color: #13b1d8;
+  color: #20a9df;
 }
 
 .nav .nav-item:nth-child(1) {
@@ -520,7 +519,7 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #13b1d8;
+  background: #20a9df;
 }
 
 body {
@@ -551,7 +550,7 @@ body {
   overflow: hidden;
   text-align: left;
   color: white;
-  border-bottom: 5px solid #13b1d8;
+  border-bottom: 5px solid #20a9df;
   opacity: 0.9;
 }
 
@@ -564,7 +563,7 @@ body {
 .landing-page-wrapper .landing-page .title .name {
   font-size: 6rem;
   padding-bottom: 1rem;
-  color: #13b1d8;
+  color: #20a9df;
 }
 
 .landing-page-wrapper .landing-page .title .name .last {
@@ -575,7 +574,7 @@ body {
   display: block;
   width: 100px;
   height: 3px;
-  background: #13b1d8;
+  background: #20a9df;
 }
 
 .landing-page-wrapper .landing-page .title > span::after {
@@ -586,7 +585,7 @@ body {
           transform: translate(4rem, 1rem);
   width: 100px;
   height: 3px;
-  background: #13b1d8;
+  background: #20a9df;
 }
 
 .landing-page-wrapper .landing-page .anchors {
@@ -651,9 +650,20 @@ body {
 }
 
 .landing-page-wrapper .landing-page .anchors .nav-item .lid-wrapper .lid.slide {
-  background: #13b1d8;
   -webkit-transform: rotate(245deg);
           transform: rotate(245deg);
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item:nth-child(1) .lid-wrapper .lid.slide {
+  background: #20a9df;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item:nth-child(2) .lid-wrapper .lid.slide {
+  background: #ffcc99;
+}
+
+.landing-page-wrapper .landing-page .anchors .nav-item:nth-child(3) .lid-wrapper .lid.slide {
+  background: #2c007d;
 }
 
 h1, h2, h3 {
@@ -705,7 +715,7 @@ h1, h2, h3 {
 }
 
 .image-container .caption p .name {
-  color: #13b1d8;
+  color: #20a9df;
   font-weight: bold;
 }
 
@@ -817,7 +827,7 @@ footer .footer-container .disclaimer {
   .future-projects {
     height: auto;
   }
-  #sec3 > .project-grid {
+  .project-grid-future {
     -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }
@@ -827,7 +837,7 @@ footer .footer-container .disclaimer {
   .recent-projects {
     height: auto;
   }
-  .project-grid {
+  .project-grid-recent {
     -ms-grid-columns: (minmax(360px, 1fr))[auto-fill];
         grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
   }

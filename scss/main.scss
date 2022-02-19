@@ -117,12 +117,43 @@ body{
                   height: 0.2rem;
                   background: $secondary-textcolor;
                   &.slide{
-                     background:$landing-textcolor;
+                     
                      transform:rotate(245deg);                    
                   }
-                  
+                 
                }
+                
             }
+         }
+         .nav-item:nth-child(1){
+            .lid-wrapper{
+               .lid{
+                  &.slide{
+                     background: $landing-textcolor;
+                  }
+               }
+            }       
+            
+         }
+         .nav-item:nth-child(2){
+            .lid-wrapper{
+               .lid{
+                  &.slide{
+                     background: $tertiary-textcolor;
+                  }
+               }
+            }       
+            
+         }
+         .nav-item:nth-child(3){
+            .lid-wrapper{
+               .lid{
+                  &.slide{
+                     background: $quanary-textcolor;
+                  }
+               }
+            }       
+            
          }
       }     
    }

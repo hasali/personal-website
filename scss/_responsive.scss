@@ -78,7 +78,7 @@
     .future-projects{
         height:auto;
     }
-    #sec3 > .project-grid{
+    .project-grid-future{
         grid-template-columns: repeat(auto-fill, minmax(360px,1fr));
     }
 }
@@ -87,7 +87,7 @@
     .recent-projects{
         height: auto;
     }
-     .project-grid{
+     .project-grid-recent{
          grid-template-columns:repeat(auto-fill, minmax(360px,1fr)) ;
      }
      .about{

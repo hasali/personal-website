@@ -78,7 +78,7 @@
         padding-right: 1rem;
         transform: translateX(-100%);
         border: 1px;
-        border-bottom-right-radius: 600px 100px;
+        //border-bottom-right-radius: 600px 100px;
         opacity: 0.95;
         @include transition-ease;
         &.open{
