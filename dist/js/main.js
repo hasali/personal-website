@@ -10,7 +10,6 @@ const sleeveItem = document.querySelectorAll(".sleeve-item");
 const landingPage = document.querySelector(".landing-page-wrapper");
 var isMenuOpen = false;
 
-
 menuBtn.style.display = "none";
 
 window.addEventListener("scroll", () => {
@@ -25,11 +24,6 @@ window.addEventListener("scroll", () => {
     }
     console.log(isMenuOpen);
 })
-
-
-
-
-
 
 menuBtn.addEventListener('click', () => {
     console.log('hello from menubtn');
